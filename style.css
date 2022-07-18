@@ -1,0 +1,202 @@
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+h3 {
+    border-bottom: white solid 3px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.load-wrapp {
+    display: flex;
+    justify-content: center;
+    background-color: #d8d8d8;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 21px 20px;
+    border-radius: 5px;
+}
+
+p {
+    color: #000000a1;
+    font-family: sans-serif;
+}
+
+.cir {
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    background-color: #4b9cdb;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.load-1 .line:nth-of-type(1) {
+    animation: a1 1.5s 0s infinite alternate;
+}
+
+.load-1 .line:nth-of-type(2) {
+    animation: a1 1.5s .5s infinite alternate;
+}
+
+.load-1 .line:nth-of-type(3) {
+    animation: a1 1.5s 1s infinite alternate;
+}
+
+.load-2 .line:nth-last-child(1) {
+    animation: a2 1.5s 1s infinite;
+}
+
+.load-2 .line:nth-last-child(2) {
+    animation: a2 1.5s 0.5s infinite;
+}
+
+.load-2 .line:nth-last-child(3) {
+    animation: a2 1.5s 0s infinite;
+}
+
+.load-3 .line:nth-last-child(1) {
+    animation: a3 .3s .2s infinite alternate forwards;
+}
+
+.load-3 .line:nth-last-child(2) {
+    animation: a3 .3s 0.1s infinite alternate forwards;
+}
+
+.load-3 .line:nth-last-child(3) {
+    animation: a3 .3s 0s infinite alternate forwards;
+}
+
+.load-2 {
+    width: 100%;
+    text-align: center;
+}
+
+.ring-1 {
+    border: 7px #4b9cdb dashed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: a4 2s 0s infinite linear forwards;
+}
+
+.ring-2 {
+    border: 5px #4b9cdb solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.ball-holder {
+    width: 40px;
+    height: 40px;
+    animation: a4 1.2s 0s infinite linear forwards;
+}
+
+.ball {
+    top: -5px;
+    position: relative;
+}
+
+.load-6 {
+    text-align: center;
+}
+
+.letter-holder div {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #777;
+    font-family: sans-serif;
+    letter-spacing: -4px;
+}
+
+.l-1 {
+    animation: a5 1.6s 0s infinite alternate forwards;
+}
+
+.l-2 {
+    animation: a5 1.6s .48s infinite alternate forwards;
+}
+
+.l-3 {
+    animation: a5 1.6s .6s infinite alternate forwards;
+}
+
+.l-4 {
+    animation: a5 1.6s .72s infinite alternate forwards;
+}
+
+.l-5 {
+    animation: a5 1.6s .84s infinite alternate forwards;
+}
+
+.l-6 {
+    animation: a5 1.6s .96s infinite alternate forwards;
+}
+
+.l-7 {
+    animation: a5 1.6s 1.08s infinite alternate forwards;
+}
+
+.l-8 {
+    animation: a5 1.6s 1.2s infinite alternate forwards;
+}
+
+.l-9 {
+    animation: a5 1.6.s 1.32s infinite alternate forwards;
+}
+
+.l-10 {
+    animation: a5 1.6s 1.44s infinite alternate forwards;
+}
+
+@keyframes a1 {
+    50% {
+        height: 35px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+@keyframes a2 {
+
+    50% {
+        width: 35px;
+    }
+
+    100% {
+        width: 15px;
+    }
+}
+
+@keyframes a3 {
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes a4 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes a5 {
+    100% {
+        opacity: 0;
+    }
+}
